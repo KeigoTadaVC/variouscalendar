@@ -46,6 +46,11 @@ var ApplicationScript = function () {
         "js/fullcalendar.js",
         "js/ja.js",
         "js/calendar.js",
+        //Model
+        "Model/calendarModel.js",
+        
+        //ViewModel
+        "ViewModel/calendarViewModel.js"
     ];
 
     ApplicationScript.importCss(cssList);
