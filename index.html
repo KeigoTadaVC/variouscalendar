@@ -59,7 +59,16 @@
 							<span id="month_pulldown"></span>
 							<span id="day_pulldown"></span>
         				</div>
+        				～
+        				<div id="dateView">
+        					<span id="year_pulldown"></span>
+							<span id="month_pulldown"></span>
+							<span id="day_pulldown"></span>
+        				</div>
       				</div>
+      				<div id="dateView">
+						{{year}}-{{month}}-{{day}}
+					</div>
       				<div class="modal-footer">
         				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         				<button type="button" class="btn btn-primary">Save changes</button>
@@ -80,7 +89,10 @@
 					<div class="panel-heading dark-overlay"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg>Calendar</div>
 				</div>
 				<div id="calendar">
-			</div>
+				</div>
+				<div id="dateView">
+					{{year}}-{{month}}-{{day}}
+				</div>
 			</div>
 		</div>
 	</div>	<!--/.main-->
