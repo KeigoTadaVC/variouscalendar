@@ -41,11 +41,14 @@ var ApplicationScript = function () {
         "css/calendar.css",
     ];
     var jsList = [
+        "js/common.js",
         "js/moment.min.js",
         "js/jquery.min.js",
         "js/fullcalendar.js",
         "js/ja.js",
         "js/calendar.js",
+        // Components
+        "components/input-date-pulldown.js",
         //Model
         "Model/calendarModel.js",
         

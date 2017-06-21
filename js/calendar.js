@@ -3,9 +3,12 @@
 $(document).ready(function () {
 	// カレンダー生成
 	var dayClick = function(date){
-		dateModel.year = date._d.getFullYear();
+		dateFromVM.year = date._d.getFullYear();
+		dateFromVM.month = date._d.getMonth() + 1;
+		dateFromVM.day = date._d.getDate();
+		/*dateModel.year = date._d.getFullYear();
 		dateModel.month = date._d.getMonth() + 1;
-		dateModel.day = date._d.getDate();
+		dateModel.day = date._d.getDate();*/
 		$('select[name=year] option[value=' + dateModel.year + ']').prop('selected', true);
 		$('select[name=month] option[value=' + dateModel.month + ']').prop('selected', true);
 		$('select[name=day] option[value=' + dateModel.day + ']').prop('selected', true);
